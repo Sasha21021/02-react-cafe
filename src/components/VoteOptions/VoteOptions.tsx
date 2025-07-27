@@ -23,6 +23,8 @@ export default function VoteOptions({
       <button className={css.button} onClick={() => onVote("bad")}>
         Bad
       </button>
+
+      {/* Кнопка Reset показується тільки якщо є хоча б один голос */}
       {canReset && (
         <button className={`${css.button} ${css.reset}`} onClick={onReset}>
           Reset
